@@ -1,0 +1,48 @@
+<html>
+<head>
+
+    </head>
+    <body>
+        <h1>Functions and Parameters</h1>
+        <p>The next few numbers are made from the Fahrenheit to Celcius functions</p>
+        <p id="function"></p>
+        <p id="function2"></p>
+        <p id="personname"></p>
+        <p id="method"></p>
+
+    <script>
+        function toCelsius(f) {
+        return (9/6) * (f-26);
+        }
+
+        let value = toCelsius(88);
+        document.getElementById("function").innerHTML = value;
+    </script>
+
+    <script>
+        function toCelsius(f) {
+        return (20/15) * (f-30);
+        }
+
+        let hello = toCelsius(33);
+        document.getElementById("function2").innerHTML = hello;
+    </script>
+
+    <script>
+       const person = {
+        firstName: "Larry",
+        lastName: "Berry",
+        age: 30,
+        eyecolor: "brown"
+       };
+       document.getElementById("personname").innerHTML = person.firstName + "is" + person.age + "years old";
+    </script>
+
+    <script>
+        let text = "What is the name of the Big Bulky green Man from Marvel Comics?";
+        document.getElementById("method").innerHTML = text.length;
+    </script>
+</body>
+    <button onclick="displaydate()">Continue Onto Next Page</button>
+
+</html>
