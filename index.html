@@ -36,11 +36,15 @@
         age: 30,
         eyecolor: "brown"
        };
+
+       person.firstname = function() {
+        return this.firstName + " " + this.lastName;
+       };
     </script>
 
     <script>
         let text = "What is the name of the Big Bulky green Man from Marvel Comics?";
     </script>
 </body>
-    <button onclick="displaydate()">Continue Onto Next Page</button>
+    <button onclick="this.innerHTML=Date()">The Date and Time is?</button>
 </html>
